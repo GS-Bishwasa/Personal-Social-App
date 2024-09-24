@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+
+    <div id="div" class="animate__animated animate__flipInY">
+        <h1>Login</h1>
+        <form id="form1" action="">
+
+            <input required="required" placeholder="Email Id" type="email" name="email" id="email">
+            <hr>
+            <small id="small1"><i class="fa-solid fa-triangle-exclamation" style="color:red;"></i> Email Id Is Not Registered <br></small>
+            <br>
+            
+            <input required="required" placeholder="Password" type="password" name="password" id="pass">
+            <hr>
+            <small id="small2"><i class="fa-solid fa-triangle-exclamation" style="color:red;"></i> Wrong Password <br></small>
+            
+
+            <br>
+            
+            <!-- <input type="submit" value="Log In" id="btn"><br> -->
+            <button type="submit" id="btn">Log In</button><br><br>
+        </form>
+        <h5>Don't have an account?<span id="span">Sign Up</span></h5>
+    </div>
+
+
+    <div id="div1" class="animate__animated animate__flipInY">
+        <h1>Sign Up</h1>
+        <form id="form"  action="">
+
+            <input placeholder="Name" required="required" type="text" name="email" id="name">
+            <hr><br>
+            <input placeholder="Email Id" required="required" type="email" name="email" id="email1">
+            <hr>
+            <small id="small">Email Already Exists  <br></small>
+            <br>
+            <input placeholder="Phone No." required="required" type="number" name="contact" id="num">
+            <hr><br>
+            
+            <input placeholder="Password" required="required" type="password" name="password" id="pass1">
+            <hr><br>
+            
+            <!-- <input type="submit" value="Sign Up" id="btn1"><br> -->
+            <button type="submit" id="btn1">Sign Up</button><br><br>
+        </form>
+        <h5>Already have an account?<span id="span1">Log In</span></h5>
+    </div>
+
+
+    <script>
+        let b = document.getElementById("span")
+        b.onclick = function () {
+            let b = document.getElementById("div")
+            let c = document.getElementById("div1")
+            b.style.display = "none"
+            c.style.display = "block"
+        }
+        let c = document.getElementById("span1")
+        c.onclick = function () {
+            let b = document.getElementById("div")
+            let c = document.getElementById("div1")
+            b.style.display = "block"
+            c.style.display = "none"
+        }
+    </script>
+    <script src="signup.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

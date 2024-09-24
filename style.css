@@ -1,0 +1,154 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+}
+
+body {
+    /* background-color: rgb(237, 202, 237); */
+    background-image: url("profile/images/nightbg.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#div {
+    color: white;
+    /* background-color: white; */
+    height: 300px;
+    width: 230px;
+    margin: 150px auto;
+    border-radius: 5px;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content:center ; */
+    padding: 10px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(143, 138, 138, 0.24) 0px 3px 8px;
+    backdrop-filter: blur(50px);
+}
+
+#div1 {
+    color: white;
+    /* background-color: white; */
+    height: 390px;
+    width: 230px;
+    margin: 150px auto;
+    border-radius: 5px;
+    display: none;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content:center ; */
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    backdrop-filter: blur(10px);
+}
+
+#btn {
+    /* display: flex;
+    justify-content: center; */
+    width: 228px;
+    height: 30px;
+    /* background: rgb(182, 0, 242);
+    background: linear-gradient(90deg, rgba(182, 0, 242, 1) 0%, rgba(255, 0, 215, 1) 100%); */
+    background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    outline: none;
+}
+
+#btn1 {
+    /* display: flex;
+    justify-content: center; */
+    align-items: center;
+    width: 228px;
+    height: 30px;
+    /* background: rgb(182, 0, 242);
+    background: linear-gradient(90deg, rgba(182, 0, 242, 1) 0%, rgba(255, 0, 215, 1) 100%); */
+    background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    outline: none;
+}
+
+#email {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#email::placeholder{
+    color: white;
+}
+#pass::placeholder{
+    color: white;
+}
+#email1::placeholder{
+    color: white;
+}
+#pass1::placeholder{
+    color: white;
+}
+#name::placeholder{
+    color: white;
+}
+#num::placeholder{
+    color: white;
+}
+
+#pass {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#email1 {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#pass1 {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#name {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#num {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif
+}
+
+h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px !important;
+
+}
+
+span {
+    color: cyan;
+    cursor: pointer;
+}
+
+#small1,#small2,#small{
+display: none;
+color: red;
+
+}

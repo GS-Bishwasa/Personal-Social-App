@@ -1,0 +1,309 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+#left {
+    width: 75%;
+    height: 100vh;
+    float: left;
+}
+
+#right {
+    width: 25%;
+    height: 100vh;
+    float: right;
+
+}
+
+#video_player {
+    width: 100%;
+    height: auto;
+}
+
+#progress_box {
+    margin-bottom: 3px;
+    width: 100%;
+    height: 10px;
+    background-color: aqua;
+}
+
+#progress_bar {
+    width: 0%;
+    /* width: 40%; */
+    height: 10px;
+    background-color: yellow;
+}
+
+#control {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#play_btn {
+    font-size: 50px;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#right_btn {
+    font-size: 50px;
+    color: white;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+
+#left_btn {
+    font-size: 50px;
+    color: white;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+
+#play_tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timing,
+#play_tools,
+#other_tools {
+    width: 33.33%;
+}
+
+#other_tools {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#v_timing {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#volume,
+#full_screen,
+#speed {
+    color: white;
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#top {
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    padding: 15px;
+    position: relative;
+}
+
+#top h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+#search {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 15px;
+}
+
+#open_video_box_btn {
+    font-size: 25px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+#add_video_box {
+    width: 80%;
+    height: auto;
+    border-radius: 15px 0px 15px 15px;
+    background-color: #323232;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    padding: 20px;
+    display: none;
+}
+
+#add_video_box h2 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center
+}
+
+#video_name,
+#video_link {
+    width: 100%;
+    padding: 8px;
+    border: 1px solic #ccc;
+    margin-bottom: 15px
+}
+
+#add_video_btn {
+    width: 70px;
+    background-color: yellow;
+    border: none;
+    outline: none;
+    padding: 8px;
+}
+
+#bottom {
+    width: 100%;
+    padding: 20px;
+    height: 80%;
+    overflow: auto;
+}
+
+#main_video_box {
+    /* color: white; */
+    background-color: yellow;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#playlist_video_name {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px
+}
+
+#video_play_btn {
+    width: 50%;
+    border: none;
+    padding: 9px;
+    background-color: #4285F4;
+    color: white;
+    cursor: pointer;
+
+}
+
+#video_delete_btn {
+    width: 50%;
+    border: none;
+    padding: 9px;
+    background-color: #EA4335;
+    color: white;
+    cursor: pointer;
+
+}
+
+#volume_control {
+    /* appearance: none; ---> Is Used To Delete The Default Design Of An Element */
+    appearance: none;
+    transform: rotate(270deg);
+    width: 100px;
+    outline: none;
+    height: 15px;
+    background-color: #EA4335;
+    position: absolute;
+    top: -70px;
+    left: -30px;
+}
+
+#speed_control {
+    /* appearance: none; ---> Is Used To Delete The Default Design Of An Element */
+    appearance: none;
+    transform: rotate(270deg);
+    width: 100px;
+    outline: none;
+    height: 15px;
+    background-color: #EA4335;
+    position: absolute;
+    top: -70px;
+    left: -38px;
+}
+
+#volume_control::-webkit-slider-thumb,
+#speed_control::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 20px;
+    background-color: white;
+    /* border-radius: 50%; */
+    /* border: 1px solid black; */
+}
+
+#volume_box,
+#speed_box {
+    position: relative;
+    width: fit-content;
+}
+
+/* Responsive coding */
+@media(max-width:768px) {
+    #left {
+        width: 100%;
+        height: auto;
+    }
+
+    #right {
+        width: 100%;
+    }
+
+    #volume,
+    #full_screen,
+    #speed {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+    #left_btn,
+    #right_btn {
+        font-size: 30px;
+    }
+
+    #play_btn {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #v_timing {
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    #volume_control {
+        left: -36px;
+    }
+    #top{
+        height: auto;
+    }
+}
+
+
+@media(max-width:320px) {
+    #left_btn,
+    #right_btn {
+        font-size: 20px;
+    }
+    #play_btn {
+        font-size: 30px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    #volume, #full_screen, #speed {
+        margin-right: 10px;
+    }
+}

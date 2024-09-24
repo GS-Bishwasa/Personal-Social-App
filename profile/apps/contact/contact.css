@@ -1,0 +1,223 @@
+*{
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+body::-webkit-scrollbar{
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+border-radius: 10px;
+background-color: yellow;
+}
+body::-webkit-scrollbar-track{
+background-color: inherit;
+}
+
+#profile_box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#profile_pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: rgba(143, 138, 138, 0.24) 0px 3px 8px;
+    background-color: yellow;
+
+}
+
+#new_contact{
+    font-size: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color: yellow;
+    cursor: pointer;
+}
+
+#contact_bg{
+   
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#add_contact_box{
+    width: 35%;
+    height: auto;
+    background-color: yellow;
+    box-shadow: rgba(143, 138, 138, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    padding: 30px;
+margin-top: 150px;
+}
+
+#add_contact_box h1{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#c_name, #c_number{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 1px solid black;
+    border-left: 5px solid black;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 10px;
+}
+#add,#close{
+    width: 100px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#main_all_contact_box{
+   /* overflow : hidden; */
+    color: yellow;
+    margin: 0 auto;
+    width: 35%;
+    height: 100vh;
+    
+
+}
+#contact_header{
+    color: yellow;
+    width: 100%;
+    height: 150px;
+   
+
+}
+
+#contact_header h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#search{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    padding-left: 3px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid yellow;
+    background-color: transparent;
+    outline: none;
+}
+
+#all_contact_box{
+    width: 100%;
+    height: 75%;
+padding: 10px;
+overflow-y: scroll;
+}
+
+#all_contact_box::-webkit-scrollbar{
+    width: 7px;
+}
+#all_contact_box::-webkit-scrollbar-thumb{
+border-radius: 10px;
+background-color: yellow;
+}
+#all_contact_box::-webkit-scrollbar-track{
+background-color: inherit;
+}
+
+#contact{
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    color: black;
+    border-radius: 15px;
+}
+#contact p{
+    font-size: 20px;
+    margin: 5px 0;
+}
+#tool{
+    width: 25%;
+    float: right;
+    margin-top: -20px;
+
+}
+#tool i{
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* Responsive coding */
+
+@media(max-width: 1025px){
+    #tool{
+        margin-top: -40px;
+        width: 50px;
+    } 
+}
+@media(max-width: 769px){
+   #main_all_contact_box{
+    width: 50%;
+   }
+   #all_contact_box{
+    margin-top: 0px;
+   }
+   #add_contact_box{
+    width: 50%;
+   }
+}
+
+@media(max-width: 568px){
+    #main_all_contact_box{
+        width: 100%;
+        padding: 20px;
+       }
+
+       #profile_box{
+        display: none;
+       }
+       #new_contact{
+        color: rgb(255, 204, 0);
+        bottom: 20px;        
+        right: 20px;
+       }
+       #all_contact_box{
+        margin-top: 0px;
+       }
+       #add_contact_box{
+        width: 90%;
+       }
+}
+@media(max-width: 319px){
+    #all_contact_box{
+        margin-top: 0px;
+       }
+}

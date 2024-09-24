@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="page_cover">
+        <div id="profile_box">
+            <div id="profile_pic">
+                <i id="profile_icon" class="fas fa-user"></i>
+                <input type="file" accept="image/*" name="" id="profile_upload">
+            </div>
+            <p style="font-size: 23px; margin: 10px;">Upload Profile Pic</p>
+            <h1 id="profile_name"></h1>
+            <button type="" id="next">Next <i class="fas fa-angle-double-right"></i></button>
+        </div>
+    </div>
+
+    <div id="main_profile_page">
+        <div id="profile_header">
+            <div id="profile_picture">
+
+            </div>
+        </div>
+        <h1 id="profile_username"></h1>
+        <div id="app">
+            <div id="contact">
+                <i class="fas fa-address-book"></i>
+                <p>Contact</p>
+            </div>
+            <div id="player">
+                <i class="fas fa-play-circle"></i>
+                <p>Player</p>
+            </div>
+            <div id="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <p id="logout_text">Log Out</p>
+            </div>
+        </div>
+        <div id="profile_footer">
+            <p>Copyright &copy; </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
