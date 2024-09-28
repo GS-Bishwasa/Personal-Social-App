@@ -7,10 +7,10 @@
 body{
     /* background-color: rgb(237, 202, 237); */
     background-color: black;
+    /* background-image: url("images/nightbg.avif"); */
 }
 #page_cover{
     /* background-color: rgb(237, 202, 237); */
-    background-image: url("images/nightbg.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
